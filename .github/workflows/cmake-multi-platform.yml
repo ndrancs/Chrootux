@@ -3,6 +3,7 @@
 name: CMake Multi-Platform Build (arm64)
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "main, stage" ]
   pull_request:
