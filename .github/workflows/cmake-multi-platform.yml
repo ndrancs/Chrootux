@@ -1,12 +1,12 @@
 # .github/workflows/cmake-multi-platform.yml
 
-name: CMake Multi-Platform Build (x86_64)
+name: CMake Multi-Platform Build (arm64)
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main, stage" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main, stage" ]
 
 jobs:
   build:
@@ -14,7 +14,7 @@ jobs:
 
     strategy:
       matrix:
-        platform: [x86_64]
+        platform: [arm64]
 
     steps:
       - name: Checkout repository
