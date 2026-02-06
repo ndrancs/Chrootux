@@ -1,5 +1,3 @@
-# .github/workflows/cmake-multi-platform.yml
-
 name: CMake Multi-Platform Build (arm64)
 
 on:
@@ -26,7 +24,7 @@ jobs:
           sudo apt-get update && sudo apt-get install -y cmake build-essential \
             gcc g++ libcurl4-openssl-dev libncurses-dev libarchive-dev zip \
             gcc-aarch64-linux-gnu g++-aarch64-linux-gnu \
-            gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf
+            libcurl4-openssl-dev
 
       - name: Enable verbose logging
         run: set -x
